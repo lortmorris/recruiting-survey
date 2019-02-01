@@ -1,0 +1,16 @@
+{
+  "name": "recruiting",
+  "version": "1.0.0",
+  "description": "pa los pibes",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "./node_modules/.bin/nodemon"
+  },
+  "author": "César Casas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
+}
