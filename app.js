@@ -22,4 +22,4 @@ app.get('/data', (req, res) => {
 
 const server = http.createServer(app);
 
-server.listen(5000, () => console.info('running on *:5000'));
+server.listen(5432, () => console.info('running on *:5000'));
