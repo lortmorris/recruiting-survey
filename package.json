@@ -10,7 +10,9 @@
   "author": "César Casas",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "mongojs": "^2.6.0",
     "nodemon": "^1.18.9"
   }
 }
