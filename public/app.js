@@ -2,7 +2,7 @@
 const question = q => (`<div class="col itemSection">${q}</div>`)
 const lastExperience = () => {
   const year = new Date().getFullYear();
-  let str = `<div class="col">
+  let str = `<div class="col"> Last Experience:
   <select class="itemSection">
     <option value=''>Never</option>
   `;
@@ -15,7 +15,7 @@ const lastExperience = () => {
 
 const experience = () => {
   const opts = Array(20).fill(0).map((a, b) => `<option value="${b}">${b}</option>`).join('');
-  return `<div class="col">
+  return `<div class="col">Years of Experience:
   <select class="itemSection">${opts}</select>
   </div>`;
 }
@@ -105,7 +105,7 @@ $(document).ready(() => {
         data: JSON.stringify(finalResult),
         contentType: "application/json; charset=utf-8",
         success: function() {
-          console.info('subido');
+          alert('Thanks for you time!');
         },
         processData: false,
         dataType: 'json',
