@@ -96,7 +96,7 @@ $(document).ready(() => {
       .concat(processItems('plangs'))
       .concat(processItems('jlibs'))
       .concat(processItems('javafw'))
-      .concat(processItems('javafw'))
+      .concat(processItems('qtools'))
 
       console.info(finalResult);
       $.ajax({
