@@ -70,6 +70,8 @@ $(document).ready(() => {
     createDrop('javafw', 0);
     createDrop('qtools', 3);    
     createDrop('autools', 4);
+    createDrop('other', 5);
+
 
     $('#form').submit(function(event, b){
       event.preventDefault();
@@ -99,7 +101,7 @@ $(document).ready(() => {
       .concat(processItems('javafw'))
       .concat(processItems('qatools'))
       .concat(processItems('autools'))
-
+      .concat(processItems('other'))
 
       console.info(finalResult);
       $.ajax({
