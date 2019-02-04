@@ -2,11 +2,10 @@
 
 This is just a easy demo (ugly, i know).
 
-
-# install
+Install
 ```bash
-$ git clone https://github.com/lortmorris/recruiting-survey
-$ cd recruiting-survery
+$ git clone https://github.com/truenorthaen/recruiting-survey
+$ cd recruiting-survey
 $ npm install
 $ npm run watch
 ```

@@ -4,9 +4,9 @@ const lastExperience = () => {
   const year = new Date().getFullYear();
   let str = `<div class="col"> Last Experience:
   <select class="itemSection">
-    <option value=''>Never</option>
+    <option value=''>N/A</option>
   `;
-  for (let i = 1980; i <= year; i++) {
+  for (let i = 2000; i <= year; i++) {
     str+=`<option value="${i}">${i}</option>`
   }
   str+='</select></div>';
@@ -68,7 +68,10 @@ $(document).ready(() => {
     createDrop('plangs', 2);
     createDrop('jlibs', 1);
     createDrop('javafw', 0);
-    createDrop('qtools', 3);
+    createDrop('qtools', 3);    
+    createDrop('autools', 4);
+    createDrop('other', 5);
+
 
     $('#form').submit(function(event, b){
       event.preventDefault();
@@ -96,7 +99,9 @@ $(document).ready(() => {
       .concat(processItems('plangs'))
       .concat(processItems('jlibs'))
       .concat(processItems('javafw'))
-      .concat(processItems('javafw'))
+      .concat(processItems('qatools'))
+      .concat(processItems('autools'))
+      .concat(processItems('other'))
 
       console.info(finalResult);
       $.ajax({
