@@ -4,9 +4,9 @@ const lastExperience = () => {
   const year = new Date().getFullYear();
   let str = `<div class="col"> Last Experience:
   <select class="itemSection">
-    <option value=''>Never</option>
+    <option value=''>N/A</option>
   `;
-  for (let i = 1980; i <= year; i++) {
+  for (let i = 2000; i <= year; i++) {
     str+=`<option value="${i}">${i}</option>`
   }
   str+='</select></div>';
