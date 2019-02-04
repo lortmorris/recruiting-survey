@@ -69,6 +69,8 @@ $(document).ready(() => {
     createDrop('jlibs', 1);
     createDrop('javafw', 0);
     createDrop('qtools', 3);
+    createDrop('autools', 4);
+
 
     $('#form').submit(function(event, b){
       event.preventDefault();
@@ -97,6 +99,7 @@ $(document).ready(() => {
       .concat(processItems('jlibs'))
       .concat(processItems('javafw'))
       .concat(processItems('javafw'))
+      .concat(processItems('autools'))
 
       console.info(finalResult);
       $.ajax({
