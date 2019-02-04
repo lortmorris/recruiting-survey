@@ -19,8 +19,8 @@ app.use(helmet());
 
 const files = [
   { name: 'Java Frameworks', file: 'java-fws.csv' },
-  { name: 'JavaScript libs', file: 'js-libs.csv' },
-  { name: 'Program Languages', file: 'program-languages.csv' },
+  { name: 'JavaScript Frameworks', file: 'js-libs.csv' },
+  { name: 'Programming Languages', file: 'program-languages.csv' },
   { name: 'QA Tools', file:'qa-tools.csv' },
 ];
 
